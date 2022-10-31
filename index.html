@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="winter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>교사몬</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 여기부터 네브바입니다 -->
+    <nav>
+      <div class="navbar bg-secondary text-primary-content">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-secondary rounded-box w-52"
+            >
+              <li><a>재외한국학교 목록</a></li>
+              <li><a>채용 공고</a></li>
+              <li><a>나의 지원 내역</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-xl">재외한국학교 교사몬</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+              <span class="badge badge-xs badge-success indicator-item"></span>
+            </div>
+          </button>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="https://placeimg.com/80/80/people" />
+              </div>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-secondary rounded-box w-52">
+              
+              <li><a>계정<span class="badge">비밀번호 변경 필요</span></a></li>
+              <li><a>프로필</a></li>
+              <li><a>로그아웃</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!-- 여기부터 표 입니다. -->
+    <div class="overflow-x-auto sm:py-5" >
+      <table class="table w-full">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th></th>
+            <th>원서 접수</th>
+            <th>1차 발표</th>
+            <th>면접</th>
+            <th>최종 발표</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- row 1 -->
+          <tr>
+            <th></th>
+            <td>10.17. ~ 10.28.</td>
+            <td>11.01.(화)</td>
+            <td>11.12.(토)</td>
+            <td>11.16.(수)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 여기부터 학교 카드입니다. flex 관련 속성으로 반응형을 구현하였습니다. -->
+    <div class="flex flex-wrap justify-center text-lg sm:py-20">
+      <!-- 학교 카드 1 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_1.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">북경한국국제학교</h2>
+          <p>초등: 담임1, 음악1, 영어2</p>
+          <p>중등: 수학1, 물리1, 화학1</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 학교 카드 2 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_2.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">천진한국국제학교</h2>
+          <p>초등: 담임2, 영어1, 미술1</p>
+          <p>중등: 정보1, 역사1, 체육1</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 학교 카드 3 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_3.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">상해한국학교</h2>
+          <p>초등: 담임4</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+    
+      <!-- 학교 카드 4 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_4.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">웨이하이한국학교</h2>
+          <p>초등: 담임2</p>
+          <p>중등: 수학3, 영어1</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+          
+      <!-- 학교 카드 5 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_5.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">대련한국국제학교</h2>
+          <p>초등: 담임3, 체육1</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+          
+      <!-- 학교 카드 6 -->
+      <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
+        <figure class="px-10 pt-10">
+          <img src="./img/school_6.jpg" alt="school" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">칭다오청운한국학교</h2>
+          <p>중등: 물리1, 화학1, 생물2</p>
+          <div class="card-actions">
+            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모달입니다 -->
+    <input type="checkbox" id="feed-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">원서 접수가 완료되었습니다.</h3>
+        <p class="py-4">
+          다른 학교에 지원하실 수 없습니다!
+        </p>
+        <div class="modal-action">
+          <label for="feed-modal" class="btn">확인</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 여기부터 푸터입니다 -->
+    <footer class="footer footer-center p-10 bg-secondary text-primary-content">
+      <div>
+        <p>Copyright © 2022 - All right reserved by <br>
+          브루노마르스</p>
+      </div>
+    </footer>
+  </body>
+</html>
