@@ -11,6 +11,7 @@ body {
 }
 
 .card-img-top {
-  height: 14vw;
+  width: 240px;
+  height: 200px;
   object-fit: fill;
 }
