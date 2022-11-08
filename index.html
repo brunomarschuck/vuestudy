@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>교사몬</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="./main.js"></script>
   </head>
   <body>
     <!-- 여기부터 네브바입니다 -->
@@ -83,7 +84,6 @@
         </div>
       </div>
     </nav>
-    </div>
     <!-- 여기부터 표 입니다. -->
     <div class="overflow-x-auto sm:py-5" >
       <table class="table w-full">
@@ -109,8 +109,14 @@
         </tbody>
       </table>
     </div>
+
+    <!-- 여기부터 관심학교 관련입니다. -->
+    <div>
+      <h2 class="text-center my-5 text-xl">오늘 본 원서</h2>
+      <p id="numlook" class="text-center text-third-content text-3xl">0</p>
+    </div>
     <!-- 여기부터 학교 카드입니다. flex 관련 속성으로 반응형을 구현하였습니다. -->
-    <div class="flex flex-wrap justify-center text-lg sm:py-20">
+    <div class="flex flex-wrap justify-center text-lg sm:py-5">
       <!-- 학교 카드 1 -->
       <div class="card w-80 bg-base-100 shadow-xl m-10 hover:drop-shadow-2xl">
         <figure class="px-10 pt-10">
@@ -121,7 +127,15 @@
           <p>초등: 담임1, 음악1, 영어2</p>
           <p>중등: 수학1, 물리1, 화학1</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-1" class="mask mask-star" />
+            <input type="radio" name="rating-1" class="mask mask-star" />
+            <input type="radio" name="rating-1" class="mask mask-star" checked />
+            <input type="radio" name="rating-1" class="mask mask-star" />
+            <input type="radio" name="rating-1" class="mask mask-star" />
           </div>
         </div>
       </div>
@@ -138,7 +152,15 @@
           <p>초등: 담임2, 영어1, 미술1</p>
           <p>중등: 정보1, 역사1, 체육1</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star" />
+            <input type="radio" name="rating-2" class="mask mask-star" />
+            <input type="radio" name="rating-2" class="mask mask-star" checked />
+            <input type="radio" name="rating-2" class="mask mask-star" />
+            <input type="radio" name="rating-2" class="mask mask-star" />
           </div>
         </div>
       </div>
@@ -152,7 +174,15 @@
           <h2 class="card-title">상해한국학교</h2>
           <p>초등: 담임4</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-3" class="mask mask-star" />
+            <input type="radio" name="rating-3" class="mask mask-star" />
+            <input type="radio" name="rating-3" class="mask mask-star" checked />
+            <input type="radio" name="rating-3" class="mask mask-star" />
+            <input type="radio" name="rating-3" class="mask mask-star" />
           </div>
         </div>
       </div>
@@ -167,7 +197,15 @@
           <p>초등: 담임2</p>
           <p>중등: 수학3, 영어1</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-4" class="mask mask-star" />
+            <input type="radio" name="rating-4" class="mask mask-star" />
+            <input type="radio" name="rating-4" class="mask mask-star" checked />
+            <input type="radio" name="rating-4" class="mask mask-star" />
+            <input type="radio" name="rating-4" class="mask mask-star" />
           </div>
         </div>
       </div>
@@ -181,7 +219,15 @@
           <h2 class="card-title">대련한국국제학교</h2>
           <p>초등: 담임3, 체육1</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating-5" class="mask mask-star" />
+            <input type="radio" name="rating-5" class="mask mask-star" />
+            <input type="radio" name="rating-5" class="mask mask-star" checked />
+            <input type="radio" name="rating-5" class="mask mask-star" />
+            <input type="radio" name="rating-5" class="mask mask-star" />
           </div>
         </div>
       </div>
@@ -195,14 +241,35 @@
           <h2 class="card-title">칭다오청운한국학교</h2>
           <p>중등: 물리1, 화학1, 생물2</p>
           <div class="card-actions">
-            <label for="feed-modal" class="btn btn-secondary modal-button">원서 접수</label>
+            <label for="feed-modal1" class="btn btn-secondary modal-button">공고 보기</label>
+            <label for="feed-modal2" class="btn btn-secondary modal-button">원서 접수</label>
           </div>
+          <div class="rating">
+            <input type="radio" name="rating-6" class="mask mask-star" />
+            <input type="radio" name="rating-6" class="mask mask-star" />
+            <input type="radio" name="rating-6" class="mask mask-star" checked />
+            <input type="radio" name="rating-6" class="mask mask-star" />
+            <input type="radio" name="rating-6" class="mask mask-star" />
+          </div>
+        </div>
+      </div>
+
+    <!-- 모달입니다 -->
+    <input type="checkbox" id="feed-modal1" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg">모집공고 파일을 불러오는 중입니다.</h3>
+        <p class="py-4">
+          '파일확인'을 누르면 파일을 다운로드합니다.
+        </p>
+        <div class="modal-action">
+          <label for="feed-modal1" class="btn" onclick="gonggolook()">파일확인</label>
+          <label for="feed-modal1" class="btn">취소</label>
         </div>
       </div>
     </div>
 
-    <!-- 모달입니다 -->
-    <input type="checkbox" id="feed-modal" class="modal-toggle" />
+    <input type="checkbox" id="feed-modal2" class="modal-toggle" />
     <div class="modal">
       <div class="modal-box">
         <h3 class="font-bold text-lg">원서 접수가 완료되었습니다.</h3>
@@ -210,7 +277,7 @@
           다른 학교에 지원하실 수 없습니다!
         </p>
         <div class="modal-action">
-          <label for="feed-modal" class="btn">확인</label>
+          <label for="feed-modal2" class="btn">확인</label>
         </div>
       </div>
     </div>
